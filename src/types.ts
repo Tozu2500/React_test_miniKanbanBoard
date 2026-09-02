@@ -20,3 +20,10 @@ export interface Task {
 
 // A small lookup so we can render column titles from the Status value
 // instead of hardcoding strings in multiple components
+export const STATUS_LABELS: Record<Status, string> = {
+    todo: 'To Do',
+    'in-progress': 'In Progress',
+    done: 'Done',
+};
+
+export const STATUS_ORDER: Status[] = ['todo', 'in-progress', 'done'];
